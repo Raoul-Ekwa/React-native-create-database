@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import * as SQLite from 'expo-sqlite';
 import { useEffect, useState } from 'react';
 
-const db = SQLite.openDatabase('test.db');
+const db = SQLite.openDatabaseAsync('test.db');
 
 export default function App() {
   const [table, setTable] = useState([]);
